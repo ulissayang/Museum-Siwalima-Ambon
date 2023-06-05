@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Museum Siwalima</title>
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!-- icon bootsrtap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="src/style.css" />
+
+    <!-- font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top shadow"
+      style="background-color: var(--bs-body-bg)">
+      <div class="container">
+        <a class="navbar-brand" href="#awal">Siwalima</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse pt-2 pt-lg-0" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto d-flex gap-4">
+            <a class="nav-link" href="#deskripsi">Deskripsi</a>
+            <a class="nav-link" href="#koleksi">Koleksi</a>
+            <a class="nav-link" href="#maps">Lokasi</a>
+            <a class="nav-link" href="#visi-misi">Visi & Misi</a>
+            <a class="nav-link" href="#tim">Tim</a>
+            <div class="dropdown">
+              <button
+                class="btn dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span class="me-2 d-lg-none">Tema</span>
+                <i
+                  class="bi bi-sun-fill theme-icon-active"
+                  data-theme-icon-active="bi-sun-fill"
+                ></i>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <button
+                    class="dropdown-item d-flex align-items-center"
+                    type="button"
+                    data-bs-theme-value="light"
+                  >
+                    <i
+                      class="bi bi-sun-fill me-2 opacity-50"
+                      data-theme-icon="bi-sun-fill"
+                    ></i>
+                    Light
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="dropdown-item d-flex align-items-center"
+                    type="button"
+                    data-bs-theme-value="dark"
+                  >
+                    <i
+                      class="bi bi-moon-stars-fill me-2 opacity-50"
+                      data-theme-icon="bi-moon-stars-fill"
+                    ></i>
+                    Dark
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="dropdown-item d-flex align-items-center"
+                    type="button"
+                    data-bs-theme-value="auto"
+                  >
+                    <i
+                      class="bi bi-circle-half me-2 opacity-50"
+                      data-theme-icon="bi-circle-half"
+                    ></i>
+                    Auto
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar -->
+
+       <!-- home -->
+       <div class="container-fluid" id="awal">
+        <div class="container">
+          <h4 class="display-4 text-white fw-bold ">Hallo, <span class="typing-text"></span></h4>
+          <h3 class="text-white fw-700">
+            Museum dengan koleksi sejarah yang ada di Maluku
+          </h3>
+          <a href="#deskripsi">
+            <button type="button" class="btn btn-danger btn-md">
+              Jelajahi Museum
+            </button>
+          </a>
+        </div>
+      </div>
+      <!-- home -->
+  
+      <!-- deskripsi -->
+      <div class="container-fluid py-5" id="deskripsi">
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col">
+              <h1 class="text-center">Deskripsi</h1>
+            </div>
+          </div>
+        </div>
+  
+        <div id="content-desk" class="container">
+          <div class="row">
+            <div class="col-lg-6"  data-aos="zoom-in-right">
+              <h3 class="judul-hal active visually-hidden">
+                Museum <span class="line-break">Siwalima</span>
+              </h3>
+              <h3 class="judul-hal ">
+                Tiang <span class="line-break">Irene</span>
+              </h3>
+              <h3 class="judul-hal visually-hidden">
+                Menara <span class="line-break">Week</span>
+              </h3>
+              <h3 class="judul-hal visually-hidden">
+                Patung <span class="line-break">Martha</span>
+              </h3>
+              <h3 class="judul-hal visually-hidden">Dapur</h3>
+              <div class="images-hosli">
+                <div id="images" class="images">
+                  <img
+                    src="img/museum siwalima.png"
+                    alt=""
+                    class="img-fluid images-heading"
+                  />
+                </div>
+                <div class="image-multi">
+                  <a>
+                    <img
+                      src="img/museum siwalima.png"
+                      class="img-fluid"
+                      title="Museum"
+                      alt=""
+                      onclick="imgSlider('img/museum siwalima.png', 'Museum Siwalima', 'Museum Siwalima')"
+                    />
+                  </a>
+                  <a>
+                    <img
+                      src="img/Tiang Irena.jpeg"
+                      class="img-fluid"
+                      title="Tiang Irena"
+                      alt=""
+                      onclick="imgSlider('img/Tiang Irena.jpeg', 'Tiang Irene', 'Tiang Irene')"
+                    />
+                  </a>
+                  <a>
+                    <img
+                      src="img/Menara Week.jpeg"
+                      class="img-fluid"
+                      title="Menara Week"
+                      alt=""
+                      onclick="imgSlider('img/Menara Week.jpeg', 'Menara Week', 'Menara Week')"
+                    />
+                  </a>
+                  <a>
+                    <img
+                      src="img/Patung Martha.jpeg"
+                      class="img-fluid"
+                      title="Patung Martha"
+                      alt=""
+                      onclick="imgSlider('img/Patung Martha.jpeg', 'Patung Martha', 'Patung Martha')"
+                    />
+                  </a>
+                  <a>
+                    <img
+                      src="img/Dapur.jpeg"
+                      class="img-fluid"
+                      title="Dapur"
+                      alt=""
+                      onclick="imgSlider('img/Dapur.jpeg', 'Dapur', 'Dapur')"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <article class="color-font" data-aos="zoom-in-up">
+                <section class="sec pt-5 isi-article active">
+                  <p>
+                    <span class="initial-letter">M</span>useum Siwalima merupakan
+                    salah satu museum yang terletak di kawasan Taman Makmur, desa
+                    Amahusu, kecamatan Nusaniwe, kota Ambon, provinsi Maluku.
+                    Pendirian museum ini dilakukan pada tanggal 8 November 1973
+                    dan secara resmi diresmikan pada tanggal 26 Maret 1977.
+                    Bangunan museum ini strategis berada di atas bukit yang
+                    memberikan pemandangan indah ke Teluk Ambon, menambah
+                    keeksotisan museum tersebut. Terletak sekitar 5 kilometer dari
+                    pusat kota Ambon, museum ini memiliki aksesibilitas yang mudah
+                    bagi pengunjung.
+                  </p>
+                  <p>
+                    Kata &quot;Siwalima&quot; memiliki asal-usul dari dua kata,
+                    yaitu &quot;siwa&quot; dan &quot;lima&quot;. &quot;Siwa&quot;
+                    memiliki arti &quot;sembilan&quot;, diambil dari kata
+                    <b>Ulisiwa</b> yang merupakan kumpulan 9 kerajaan di wilayah
+                    selatan Maluku . Sementara &quot;lima&quot; berarti
+                    &quot;lima&quot;. Di ambil dari kata <b>Patalima</b> yang
+                    merupakan kumpulan 5 kerajaan di wilayah utara Maluku .
+                  </p>
+                  <p>
+                    Jadi <b>Siwalima</b> memiliki arti &quot;Milik Bersama&quot;
+                    dan mengundang siapa pun untuk berkunjung, tanpa memandang
+                    latar belakang suku, agama, daerah, atau negara. Museum ini
+                    menjadi cerminan keindahan dan keberagaman Maluku, sebagai
+                    tanah para raja-raja. Dalam museum ini, sejarah, alam, dan
+                    budaya digabungkan secara harmonis, menciptakan simbol
+                    persatuan dan kebanggaan bagi masyarakat Maluku dan para
+                    pengunjung dari berbagai belahan dunia.
+                  </p>
+                  <p>
+                    Museum Siwalima menyediakan jasa pemandu bagi siapa saja yang
+                    ingin dijelaskan seluruh isi museum secara rinci .Tiket
+                    masuknya sendiri terbilang murah, yakni Rp 5.000 untuk orang
+                    dewasa, sedang anak kecil dikenai biaya tiket Rp 2.000
+                  </p>
+                </section>
+  
+                <section class="sec pt-5 isi-article visually-hidden">
+                  <p>
+                    <span class="initial-letter">T</span>iang Irene yang berada di
+                    tengah museum Siwalima memiliki makna dan simbolisme khusus
+                    dalam konteks kehidupan di tanah Maluku. Pada masa lalu,
+                    ketika orang tua kita ingin membangun rumah, mereka harus
+                    mengambil kayu irena dari hutan dengan melibatkan serangkaian
+                    upacara dan proses yang khusus.
+                  </p>
+                  <p>
+                    Tiang irene tersebut melambangkan kekayaan budaya dan tradisi
+                    serta mewakili keberlanjutan nilai-nilai luhur yang diwariskan
+                    dari generasi ke generasi. Dalam proses pengambilan kayu
+                    irene, terdapat nilai-nilai seperti gotong royong, persatuan,
+                    dan kebersamaan yang tercermin dalam cara orang-orang Maluku
+                    bekerja sama membangun rumah-rumah mereka.
+                  </p>
+                  <p>
+                    Tiang irene menjadi simbol yang mengingatkan akan pentingnya
+                    memelihara hubungan sosial dan nilai-nilai yang kuat dalam
+                    membangun komunitas yang harmonis. Proses penggunaan tiang
+                    irene melibatkan kerja sama antara anggota komunitas untuk
+                    menjaga dan melestarikan tradisi-tradisi tersebut.
+                  </p>
+                </section>
+  
+                <section class="sec pt-5 isi-article visually-hidden">
+                  <p>
+                    <span class="initial-letter">M</span>enara Week yang tinggi
+                    ini bercerita tentang peresmian baileo, dulu sebelum masuknya
+                    agama di Maluku. Pada peresmian baileo itu memakai kepala
+                    manusia, dan kepala manusia itu dipakai untuk persyaratan,
+                    setelah masuknya agama persyaratan itu diganti dengan buah
+                    kelapa.
+                  </p>
+                  <p>
+                    Dalam sejarahnya, pada masa sebelum masuknya agama, peresmian
+                    Baileo dilakukan dengan cara yang berbeda. Salah satu
+                    persyaratan yang harus dipenuhi adalah penggunaan kepala
+                    manusia sebagai bagian dari persembahan atau simbolisasi
+                    kekuatan dan keberanian. Kepala manusia digunakan sebagai
+                    tanda penghormatan kepada leluhur atau roh penjaga wilayah.
+                    Namun, dengan masuknya agama, terjadi perubahan signifikan
+                    dalam persyaratan peresmian Baileo. Penggunaan kepala manusia
+                    dihentikan dan digantikan oleh buah kelapa. Buah kelapa
+                    dipilih karena memiliki makna simbolis yang kuat, seperti
+                    kesuburan, kelahiran baru, dan perlindungan dari para dewa.
+                    Perubahan ini mencerminkan transformasi budaya dan kepercayaan
+                    masyarakat setempat ketika agama masuk dan mempengaruhi
+                    tradisi adat di Maluku.
+                  </p>
+                </section>
+  
+                <section class="sec pt-5 isi-article visually-hidden">
+                  <p>
+                    <span class="initial-letter">P</span>atung Martha Christina
+                    Tiahahu yang terletak menghadap teluk Ambon ini berasal dari
+                    Nusa Laut di berikan masyarakat Abubu untuk museum Siwalima
+                    pada tahun 2018. Martha Christina Tiahahu di tetapkan sebagai
+                    pahlawan Nasional dengan keputusan presiden no. 12/tk/1969 -
+                    tanggal 20 mei 1969, Patung ini dibangun untuk mengenang jasa
+                    pahlawan perempuan dari tanah Maluku dalam melawan para
+                    penjajah
+                  </p>
+                  <p>
+                    Martha Christina Tiahahu sendiri adalah simbol dari kecantikan
+                    dan keanggunan perempuan Maluku serta mewakili nilai-nilai
+                    budaya yang kuat dalam masyarakat.
+                  </p>
+                </section>
+  
+                <section class="sec pt-5 isi-article visually-hidden">
+                  <p>
+                    <span class="initial-letter">D</span>apur merupakan salah satu
+                    tempat yang paling penting dalam kehidupan sehari-hari di
+                    masyarakat Maluku. Di dapur, makanan tradisional Maluku
+                    disiapkan dan diolah dengan menggunakan bahan-bahan alami yang
+                    khas.
+                  </p>
+                  <p>
+                    Dapur tradisional ini di simpan segala benda yang berkaitan
+                    dengan peralatan makan dan memasak khas Maluku. Misalnya,
+                    porna atau cetakan sagu dari gerabah, lesung, gata-gata,
+                    sempe, para-para atau rak tempat menyimpan kayu-kayu bakar dan
+                    peralatan untuk memasak, dan lainnya. Terdapat juga Lesa atau
+                    meja makan tradisional yang dibuat dari anyaman rotan atau
+                    serat daun. Bentuknya seperti kurungan atau tudung saji.
+                  </p>
+                  <p></p>
+                </section>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- deskripsi -->
+  
+      <!-- koleksi -->
+      <div class="container-fluid pt-5 pb-5 " id="koleksi" style="color: var(--font-2);" >
+       
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h1 class="diplay-4 text-center">Koleksi</h1>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-12 px-4">
+              <article data-aos="fade-up">
+                <p>
+                  <span class="initial-letter">A</span>walnya, museum Siwalima
+                  hanya menyimpan koleksi-koleksi budaya serta hal-hal yang berbau
+                  adat istiadat Maluku, namun seiring berjalannya waktu, Museum
+                  Siwalima memiliki empat ruang pameran. Ruang pertama merupakan
+                  ruang pameran Busana Pengantin Nusantara, dimana Museum Siwalima
+                  memamerkan busana-busana pengantin yang ada di Indonesia dan
+                  secara khusus busana pengantin Maluku. Ruang pameran kedua di
+                  Museum Siwalima adalah ruang pameran yang didedikasikan untuk
+                  menampilkan berbagai foto-foto atau lukisan perempuan dan
+                  mama-mama Maluku yang telah berjasa atau berprestasi dalam
+                  berbagai bidang, termasuk akademik, pembangunan, olahraga, dan
+                  bidang lainnya. Ruang pameran ini dirancang untuk menghormati
+                  dan mengapresiasi kontribusi yang signifikan yang telah
+                  diberikan oleh perempuan-perempuan Maluku dalam berbagai aspek
+                  kehidupan. Melalui foto-foto dan lukisan, ruang pameran ini
+                  bertujuan untuk mengabadikan momen-momen penting dalam
+                  perjalanan karir dan pencapaian mereka . Kemudian ruang pameran
+                  ketiga disebut Ruang pameran Sejarah Maluku. Di sini tersimpan
+                  segala hal yang berkaitan dengan budaya Maluku, misalnya:
+                  bangunan asli Maluku, pakaian adat, alat-alat pertanian, senjata
+                  khas, perlengkapan upacara adat, uang lama, dan berbagai guci.
+                  Ruang pameran keempat adalah ruang pameran kelautan, dimana
+                  menampilkan keindahan laut maluku dan alat-alat transportasi
+                  yang digunakan dari zaman dulu sampai yang modern.
+                </p>
+                <p>
+                  Selain itu juga ada beberapa rangka paus dan buaya yang juga
+                  dipamerkan. Jadi ribuan koleksi museum ini tersebut terbagi atas
+                  10 jenis, yakni geologika, biologika, etnografika, arkeologika,
+                  historika, numismatika heraldika, filologika, keramika,
+                  teknologi modern, dan seni rupa. Sebenarnya banyak koleksi
+                  museum Siwalima yang belum pernah di pamerkan, karena Museum
+                  Siwalima memiliki 5000 lebih koleksi yang Setiap lima tahun akan
+                  ada perubahan koleksi yang dipamerkan. Kebanyakan koleksi
+                  sejarah dan budaya Maluku yang berada di museum ini berasal dari
+                  kabupaten Maluku Tenggara Barat, Maluku Barat Daya, dan Maluku
+                  Tengah. 
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+  
+        <div class="container mt-2">
+          <div class="row">
+            <div
+              class="col-12 col-md-6 col-lg-3 d-flex mt-4 justify-content-center"  data-aos="fade-right"
+            >
+              <div class="card" style="width: 100%">
+                <a href="tatabusana.html">
+                  <img src="img/R.busana2.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <p class="card-text text-center color-font">Ruang Busana</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-3 d-flex mt-4 justify-content-center"  data-aos="fade-up"
+            >
+              <div class="card" style="width: 100%">
+                <a href="prestasi.html">
+                  <img src="img/martha.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <p class="card-text text-center color-font">Ruang Pameran</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-3 d-flex mt-4 justify-content-center"  data-aos="fade-down"
+            >
+              <div class="card" style="width: 100%">
+                <a href="sejarah.html">
+                  <img src="img/R.sejarah.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <p class="card-text text-center color-font">Ruang Sejarah</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div
+              class="col-12 col-md-6 col-lg-3 d-flex mt-4 justify-content-center"  data-aos="fade-left"
+            >
+              <div class="card" style="width: 100%">
+                <a href="kelautan.html">
+                  <img src="img/R.kelautan2.jpg" class="card-img-top" />
+                  <div class="card-body">
+                    <p class="card-text text-center color-font">Ruang Kelautan</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- koleksi -->
+  
+      <!-- lokasi -->
+      <div class="container-fluid pt-5 color-font" id="maps">
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col justify-content-center">
+              <h1 class="text-center">Lokasi Museum Siwalima</h1>
+              <div class="clearfix">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.4413477735075!2d128.15040557483755!3d-3.7134760962604565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d6ce80eafbfeb7d%3A0xbf9977619e9db228!2sMuseum%20Siwalima%20Provinsi%20Maluku!5e0!3m2!1sid!2sid!4v1684843839428!5m2!1sid!2sid"
+                  width="100%"
+                  height="300"
+                  style="
+                    border-radius: 10px;
+                    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+                  " data-aos="fade-up-left"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  class="col-md-6 float-md-end mb-3"
+                >
+                </iframe>
+                <p class="mt-5" data-aos="fade-up-right">
+                  <span class="initial-letter">M</span>useum Siwalima beralamat
+                  pada Jl. Dr. Malaiholo, Taman Makmur, Kel. Nusaniwe, Nusaniwe,
+                  kEL NUSANIWE, Kec. Nusaniwe, Kota Ambon, Maluku, yang berjarak
+                  dari kota kurang lebih 5KM. Pada arah timur dari dari museum
+                  Siwalima terdapat pura hindu center ambon yang hanya berjarak
+                  sekitar 47m.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- lokasi -->
+  
+      <!-- visis & misis -->
+      <div class="container-fluid pt-5 color-font" id="visi-misi">
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col text-center mb-4">
+              <h1 class="diplay-4 text-center mb-3">Visi & Misi Museum</h1>
+            </div>
+          </div>
+          <div class="row justify-content-center" data-aos="fade-up" data-aos-offset="2">
+            <div class="col-md-4 text-center">
+              <h3 class="text-center">Visi</h3>
+              <p>
+                Terwujudnya Museum Siwalima sebagai pusat informasi budaya dan
+                pariwisata yang mampu mencerdaskan kehidupan bangsa, meningkatkan
+                peradaban dan kebanggaan terhadap kebudayaan Nasional, serta
+                memperkokoh persatuan dan persahabatan antar bangsa.
+              </p>
+            </div>
+            <div class="col-md-6 text-start offset-md-2" data-aos="fade-up">
+              <h3 class="text-center">Misi</h3>
+              <p>
+                <ol>
+                <li>
+                  Mengembangkan dan meningkatkan kualitas SDM menuju arah
+                  profesional.
+                </li>
+                <li>
+                  Meningkatkan mutu penyajian untuk mencerdaskan kehidupan bangsa,
+                  serta menumbuhkan daya apresiatif, inovatif dan imajinatif, demi
+                  peningkatan apresiasi pengunjung Museum.
+                </li>
+                <li>
+                  Meningkatkan kualitas pemeliharaan dan penyajian koleksi agar
+                  pelestarian budaya Maluku dapat terlaksana dengan baik.
+                </li>
+                <li>
+                  Meningkatkan kualitas pengelolaan dan pelayanan registrasi dan
+                  dokumentasi.
+                </li>
+              </ol>
+              </p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- visis & misi -->
+  
+      <!-- team -->
+      <div class="container-fluid py-5 color-font" id="tim">
+        <div class="container text-center">
+          <h1 class="diplay-4 text-center mb-3">Tim Kami</h1>
+          <p>
+            Tim kami beranggotakan enam orang,kami dari perguruan tinggi Institut Teknologi dan Bisnis Stikom Ambon Prodi Teknik Informatika semester 6,
+            berdasarkan hasil survey kelompok kami, kami memilih museum siwa lima sebagai objek penelitian dengan tujuan untuk merancang sebuah website agar
+            bisa memudahkan masyarakat untuk mengenali lebih dalam tentang museum siwalima entah itu dari bentuk sejarah maupun struktur museum yang ada di dalamnya.
+          </p>
+          <div class="row pt-4">
+            <div class="col-lg-4 col-md-6 text-center tim">
+              <img
+                src="img/team/dila.jpeg"
+                class="rounded-circle timKami mb-3 img-fluid"
+                alt=""
+              />
+              <div class="">
+                <h4>Nadila</h4>
+                <p>Data analyst</p>
+                <p>
+                  <a href="https://api.whatsapp.com/send?phone=6281245537659" class="sosial"
+                    ><i class="bi bi-whatsapp"></i
+                  ></a>
+                  <a href="https://www.facebook.com/profile.php?id=100071732594696" class="sosial"
+                    ><i class="bi bi-facebook"></i
+                  ></a>
+                  <a href="https://www.instagram.com/_naadddw" class="sosial"
+                    ><i class="bi bi-instagram"></i
+                  ></a>
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center tim">
+              <img
+                src="img/team/bulan.jpeg"
+                class="rounded-circle timKami mb-3 img-fluid"
+                alt=""
+              />
+              <div class="">
+                <h4>Bulan</h4>
+                <p>Data analyst</p>
+                <p>
+                  <a href="https://whatsapp.com/" class="sosial"
+                    ><i class="bi bi-whatsapp"></i
+                  ></a>
+                  <a href="https://www.facebook.com/bulan.karnawi?mibextid=ZbWKwL" class="sosial"
+                    ><i class="bi bi-facebook"></i
+                  ></a>
+                  <a href="https://www.instagram.com" class="sosial"
+                    ><i class="bi bi-instagram"></i
+                  ></a>
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center tim">
+              <img
+                src="https://ulissayang.github.io/ulisleu.github.io/IMG/ulis1.png"
+                class="rounded-circle timKami mb-3 img-fluid"
+                alt=""
+              />
+              <div class="">
+                <h4>Ulis</h4>
+                <p>Web Developer</p>
+                <p>
+                  <a href="https://api.whatsapp.com/send?phone=6285280357433" class="sosial"
+                    ><i class="bi bi-whatsapp"></i
+                  ></a>
+                  <a href="https://web.facebook.com/" class="sosial"
+                    ><i class="bi bi-facebook"></i
+                  ></a>
+                  <a href="https://www.instagram.com" class="sosial"
+                    ><i class="bi bi-instagram"></i
+                  ></a>
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center tim">
+              <img
+                src="img/team/ahmad.jpeg"
+                class="rounded-circle timKami mb-3 img-fluid"
+                alt=""
+              />
+              <div class="">
+                <h4>Ahmad</h4>
+                <p>UI/UX</p>
+                <p>
+                  <a href="https://api.whatsapp.com/send?phone=6285336774952" class="sosial"
+                    ><i class="bi bi-whatsapp"></i
+                  ></a>
+                  <a href="https://www.facebook.com/AD.mukaddar" class="sosial"
+                    ><i class="bi bi-facebook"></i
+                  ></a>
+                  <a href="https://www.instagram.com/ad_mukaddar" class="sosial"
+                    ><i class="bi bi-instagram"></i
+                  ></a>
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center tim">
+              <img
+                src="img/team/rani.jpeg"
+                class="rounded-circle timKami mb-3 img-fluid"
+                alt=""
+              />
+              <div class="">
+                <h4>Rani</h4>
+                <p>Web Developer</p>
+                <p>
+                  <a href="https://api.whatsapp.com/send?phone=6282117472164" class="sosial"
+                    ><i class="bi bi-whatsapp"></i
+                  ></a>
+                  <a href="https://www.facebook.com/anty.ii.5891004" class="sosial"
+                    ><i class="bi bi-facebook"></i
+                  ></a>
+                  <a href="https://www.instagram.com/rani_masiri" class="sosial"
+                    ><i class="bi bi-instagram"></i
+                  ></a>
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 text-center tim">
+              <img
+                src="img/team/riski.jpeg"
+                class="rounded-circle timKami mb-3 img-fluid"
+                alt=""
+              />
+              <div class="">
+                <h4>Risky</h4>
+                <p>Web Developer</p>
+                <p>
+                  <a href="https://api.whatsapp.com/send?phone=6281343120515" class="sosial"
+                    ><i class="bi bi-whatsapp"></i
+                  ></a>
+                  <a href="https://www.facebook.com/riski.k.awali" class="sosial"
+                    ><i class="bi bi-facebook"></i
+                  ></a>
+                  <a href="https://www.instagram.com/riskiawali213" class="sosial"
+                    ><i class="bi bi-instagram"></i
+                  ></a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- akhir team -->
+
+    <!-- footer star -->
+    <div
+      class="container-fluid pt-5 pb-1 position-relative overflow-hidden"
+      style="background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%); color:black">
+      <div class="circle"></div>
+      <div class="kotak"></div>
+     
+      
+      <div class="container">
+        <div class="row justify-content-center position-relative">
+          <div class="col-md-6">
+            <h1 class="fw-bold ">Museum Siwalima</h1>
+            <p>Telp : 0911341652</p>
+            <p>
+              Jl. Dr. Malaiholo, Taman Makmur, Kel. Nusaniwe, Nusaniwe, kEL
+              NUSANIWE, Kec. Nusaniwe, Kota Ambon, Maluku
+            </p>
+          </div>
+
+          <div class="col-md-4 offset-md-2">
+            <h1 class="fw-bold">Tautan</h1>
+            <ul class="list-unstyled">
+              <li class="py-1">
+                <a href="#deskripsi" class="text-decoration-none">Deskripsi</a>
+              </li>
+              <li class="py-1">
+                <a href="#koleksi" class="text-decoration-none">Koleksi</a>
+              </li>
+              <li class="py-1">
+                <a href="#maps" class="text-decoration-none">Lokasi</a>
+              </li>
+              <li class="py-1">
+                <a href="#tim" class="text-decoration-none">Tim</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="line"></div>
+      <!-- social -->
+      <div class="d-flex justify-content-center text-center pt-3">
+        <p class="justify-content-center align-items-center">
+        <a href="https://youtube.com/@MuseumSiwalimaProvinsiMaluku" class="sosial-footer"
+          ><i class="bi bi-youtube"></i></i
+        ></a>
+        <a href="https://www.facebook.com/museumsiwalimaambon" class="sosial-footer"
+          ><i class="bi bi-facebook"></i
+        ></a>
+        <a href="https://www.instagram.com/museumsiwalimamaluku" class="sosial-footer"
+          ><i class="bi bi-instagram"></i
+        ></a>
+      </p>
+      </div>
+      
+      <div>
+        <p class="text-center ">
+          Di buat dengan ❤️ Oleh <span>Kelompok 3</span>
+        </p>
+      </div>
+    </div>
+    <!-- footer end -->
+
+    <!-- back totop start -->
+    <div class="to-top flex visually-hidden" id="backTop">
+      <a href="#"><i class="bi bi-rocket"></i></a>
+    </div>
+    <!-- back totop end -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+      integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+      integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   
+  <!-- mattboldt/typed.js/ -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script src="/src/script.js"></script>
+    
+
+   
+  </body>
+</html>

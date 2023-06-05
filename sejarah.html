@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Museum Siwalima</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+
+    <!-- icon bootsrtap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" type="text/css" href="src/style.css" />
+
+    <!-- font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav
+      class="navbar navbar-expand-lg fixed-top shadow"
+      style="background-color: var(--bs-body-bg)"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Siwalima</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto d-flex gap-4">
+            <a class="nav-link" href="tatabusana.html">Ruang Busana</a>
+            <a class="nav-link" href="prestasi.html">Ruang Prestasi</a>
+            <a class="nav-link" href="sejarah.html">Ruang Sejarah</a>
+            <a class="nav-link" href="kelautan.html">Ruang Kelautan</a>
+            <div class="dropdown">
+              <button
+                class="btn dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span class="me-2 d-lg-none">Tema</span>
+                <i
+                  class="bi bi-sun-fill theme-icon-active"
+                  data-theme-icon-active="bi-sun-fill"
+                ></i>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <button
+                    class="dropdown-item d-flex align-items-center"
+                    type="button"
+                    data-bs-theme-value="light"
+                  >
+                    <i
+                      class="bi bi-sun-fill me-2 opacity-50"
+                      data-theme-icon="bi-sun-fill"
+                    ></i>
+                    Light
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="dropdown-item d-flex align-items-center"
+                    type="button"
+                    data-bs-theme-value="dark"
+                  >
+                    <i
+                      class="bi bi-moon-stars-fill me-2 opacity-50"
+                      data-theme-icon="bi-moon-stars-fill"
+                    ></i>
+                    Dark
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="dropdown-item d-flex align-items-center"
+                    type="button"
+                    data-bs-theme-value="auto"
+                  >
+                    <i
+                      class="bi bi-circle-half me-2 opacity-50"
+                      data-theme-icon="bi-circle-half"
+                    ></i>
+                    Auto
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar -->
+
+    <div class="container-fluid pt-5" id="sejarah">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col">
+            <h1 class="diplay-4 text-center">Ruang Sejarah</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <div
+            class="col-12 col-md-6 col-lg-3 d-flex mt-4 justify-content-center"
+          >
+            <div class="card" style="width: 18rem">
+              <img
+                src="img/sejarah/patung keramat.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Patung Keramat</h5>
+                <p class="card-text">
+                  Patung – Patung batu yang keramat ini biasanya di.....
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#patungKeramat"
+                >
+                  Selengkapnya
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-3 d-flex mt-4 justify-content-center"
+          >
+            <div class="card" style="width: 18rem">
+              <img
+                src="img/sejarah/kapak batu.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Kapak Batu</h5>
+                <p class="card-text">
+                  Isi kapak terbuat dari batu yang diikat menyatu.....
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#kapakBatu"
+                >
+                  Selengkapnya
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-3 d-flex mt-4 justify-content-center"
+          >
+            <div class="card" style="width: 18rem">
+              <img
+                src="img/sejarah/patung tavu.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Patung Tavu</h5>
+                <p class="card-text">
+                  Masyarakat Maluku pada umumnya merupakan.....
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#patungTavu"
+                >
+                  Selengkapnya
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-3 d-flex mt-4 justify-content-center"
+          >
+            <div class="card" style="width: 18rem">
+              <img
+                src="img/sejarah/patung moyang.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Patung Moyang</h5>
+                <p class="card-text">
+                  Ketrampilan seni ukir telah dimilki oleh orang Maluku.....
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#patungMoyang"
+                >
+                  Selengkapnya
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-3 d-flex mt-4 justify-content-center"
+          >
+            <div class="card" style="width: 18rem">
+              <img
+                src="img/sejarah/patung raja.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Patung Raja</h5>
+                <p class="card-text">
+                  Patung ini melambangkan status sosial yang tinggi.....
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#patungRaja"
+                >
+                  Selengkapnya
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-3 d-flex mt-4 justify-content-center"
+          >
+            <div class="card" style="width: 18rem">
+              <img
+                src="img/sejarah/patung keluarga.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Patung Keluarga</h5>
+                <p class="card-text">
+                  Anggota Keluarga yang meninggal akan dibuat.....
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#patungKeluarga"
+                >
+                  Selengkapnya
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-3 d-flex mt-4 justify-content-center"
+          >
+            <div class="card" style="width: 18rem">
+              <img
+                src="img/sejarah/tengkorak keramat.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tengkorak Keramat</h5>
+                <p class="card-text">
+                  Tengkorak leluhur yang disembah dan.....
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#tengkorak"
+                >
+                  Selengkapnya
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-3 d-flex mt-4 justify-content-center"
+          >
+            <div class="card" style="width: 18rem">
+              <img
+                src="img/sejarah/perahu doti.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Perahu Doti</h5>
+                <p class="card-text">
+                  Perahu doti adalah alat untuk menyerang orang yang.....
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#perahuDoti"
+                >
+                  Selengkapnya
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-3 d-flex mt-4 justify-content-center"
+          >
+            <div class="card" style="width: 18rem">
+              <img
+                src="img/sejarah/patung penolak bala.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Patung Penolak Bala</h5>
+                <p class="card-text">
+                  Selain menggunakan jimat, kepercayaan terhadap.....
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#patungBala"
+                >
+                  Selengkapnya
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-3 d-flex mt-4 justify-content-center"
+          >
+            <div class="card" style="width: 18rem">
+              <img
+                src="img/sejarah/patung petuanan.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Patung Petuanan</h5>
+                <p class="card-text">
+                  Kepercayaan terhadap patung-patung oleh.....
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#patungPetuanan"
+                >
+                  Selengkapnya
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-3 d-flex mt-4 justify-content-center"
+          >
+            <div class="card" style="width: 18rem">
+              <img
+                src="img/sejarah/suar silalera.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Suar Silalera</h5>
+                <p class="card-text">
+                  Sisir ini berfungsi untuk memelihara rambut.....
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#suarSilalera"
+                >
+                  Selengkapnya
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal -->
+
+    <!-- patung keramat -->
+    <div
+      class="modal fade"
+      id="patungKeramat"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Patung Keramat
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/sejarah/patung keramat.jpg" class="card-img-top" />
+            Patung – Patung batu yang keramat ini biasanya di tempatkan di dusun
+            atau tempat –tempatyang di anggap sakral. berfungsi sebagai penjaga
+            , pelindung dan pemberi keamanan serta rejeki.sesekali pemiliknya
+            memberi sesajian berupa uang, makanan atau tembakau (rokok) berasal
+            dari Maluku Tenggara ( Tanimbar Kampung Amdasa,dll)
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Keluar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- akhir patung keramat -->
+
+    <!-- kapak batu -->
+    <div
+      class="modal fade"
+      id="kapakBatu"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Kapak Batu</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/sejarah/kapak batu.jpg" class="card-img-top" />
+            Isi kapak terbuat dari batu yang diikat menyatu dengan peganganya
+            yang terbuat dari kayu menggunakan rotan. Kapak batu ini digunakan
+            untuk kegiatan sehari-hari pada zaman prasejarah oleh leluhur.
+            Jeniskapak ini termasuk dalam zaman neolitikum (Zaman Batu
+            Muda)dengan ciri-ciri yaitu alat-alat batu diasahdan pembuatanya
+            halus (indah)
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Keluar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- akhir kapak batu -->
+
+    <!-- patung tavu -->
+    <div
+      class="modal fade"
+      id="patungTavu"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Patung Tavu</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/sejarah/patung tavu.jpg" class="card-img-top" />
+            Masyarakat Maluku pada umumnya merupakan masyarakat agraris. Sebagai
+            perwujudan dari daerah agraris yang memilki daerah yang subur , maka
+            perlu didukung dengan tindakan-tindakan tertentu seperti mengadakan
+            upacara kesuburan. Upacara ini biasanya di lengkapi dengan patung
+            atau arca. Selain itu ada pula patung yang di tempatkan di tanah
+            garapan, agar subur dan menghasilkan panen yang melimpah
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Keluar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- akhir patung tavu -->
+
+    <!-- patung moyang -->
+    <div
+      class="modal fade"
+      id="patungMoyang"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Patung Moyang
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/sejarah/patung moyang.jpg" class="card-img-top" />
+            Ketrampilan seni ukir telah dimilki oleh orang Maluku sejak dahulu
+            dan di wariskan kepada generasi berikutnya. Ukuran-ukuran yang
+            bernilai sakral dapat di jumpai pada patung – patung baik laki-laki
+            maupun perempuan perahu-perahu seperti belang dan kora-kora yang
+            memiliki nilai magis. Patung leluhur di gambarkan dalam posisi
+            duduk, dan di beri penghormtan dengan memasukan unsur kursi sebagai
+            symbol status yang tinggi.selain itu untuk mengenang individu yang
+            telah meninggal, terkadang pada bagian mata dan giginya di hiasi
+            dengan kulit kerang.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Keluar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- akhir patung moyang -->
+
+    <!-- patung raja -->
+    <div
+      class="modal fade"
+      id="patungRaja"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Patung Raja</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/sejarah/patung raja.jpg" class="card-img-top" />
+            Patung ini melambangkan status sosial yang tinggi (orang kaya) dalam
+            kehidupan masyarakat setempat. Patung ini dibuat sebagai manifestasi
+            dari orang kaya tersebut ketika ia meninggal dunia. Patung ini
+            berasal dari Desa Iblatmumta,Kecamatan Masela (MBD)
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Keluar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- akhir patung raja -->
+
+    <!-- patung keluarga -->
+    <div
+      class="modal fade"
+      id="patungKeluarga"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Patung Keluarga
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/sejarah/patung keluarga.jpg" class="card-img-top" />
+            Anggota Keluarga yang meninggal akan dibuat patungnya untuk kemudian
+            disembah. hal ini merupakan perwujudan pemujaan arwah leluhur
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Keluar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- akhir patung keluarga -->
+
+    <!-- tengkorak keramat -->
+    <div
+      class="modal fade"
+      id="tengkorak"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Tengkorak Keramat
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/sejarah/tengkorak keramat.jpg" class="card-img-top" />
+            Tengkorak leluhur yang disembah dan dikeramatkan berasal dari pulau
+            buru. Keistimewaanya adalah retakan vertical memanjang dari tulang
+            hidung sampai kebelakang kepala. Ini adalah suatu penyimpanan
+            biologis yang amat jarang terjadi . belum diketahui apakah ada
+            dampak terhadap IQ atau tidak
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Keluar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- akhir tengkorak keramat -->
+
+    <!-- perahu doti -->
+    <div
+      class="modal fade"
+      id="perahuDoti"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Perahu Doti</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/sejarah/perahu doti.jpg" class="card-img-top" />
+            Perahu doti adalah alat untuk menyerang orang yang tidak disukai
+            secara mistis. Melalui mantera dan permohonan kepada moyang-moyang
+            unuk menyakiti bahkan membunuh korban , perahu di hanyutkan ke laut
+            Maluku tenggara
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Keluar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- akhir perahu doti -->
+
+    <!-- patung penolak bala -->
+    <div
+      class="modal fade"
+      id="patungBala"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Patung Penolak Bala
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="img/sejarah/patung penolak bala.jpg"
+              class="card-img-top"
+            />
+            PerahuSelain menggunakan jimat, kepercayaan terhadap kesaktian nenek
+            moyang menyebabkan manusia mebuat patung dengan harapan dapat
+            melindungi pembuat atau orang lain dari bahaya. Patug tersebut
+            biasanya di letakan di tempat tertentu seperti di batas petuanan,
+            rumah, kuburan,pinggir sungai, gua-gua dan sebagainya. Seringkali
+            patung-patung itu dibuat dengan genitalis yang menonjol sebagai
+            penolak bala.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Keluar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- akhir patung penolak bala -->
+
+    <!-- patung petuanan -->
+    <div
+      class="modal fade"
+      id="patungPetuanan"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Patung Petuanan
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/sejarah/patung petuanan.jpg" class="card-img-top" />
+            Kepercayaan terhadap patung-patung oleh masyarakat ini Maluku
+            tenggara sebagai manifestasi dan media untuk berkomunikasi dengan
+            arwah leluhur yang mereka percaya dapat memberikan perlindungan
+            keamanan dan kemakmuran. Kepercayaan kepada patung wanita cantik
+            sebagai penjaga suatu lokasi tertentu atau cicak yang di anggap
+            dapat membenarkan suatu ucapan. Selain itu ada walut yang di
+            tempatkan pada kebun-kebun masyarakat sebagai proteksi terhadap
+            seragan wabah penyakit. Pada jaman dahulu masyarakat mempersembahkan
+            sajian berupa sirih , pinang, tembakau, rokok dan lain-lain kepada
+            patung-patung penjaga.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Keluar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- akhir patung petuanan -->
+
+    <!-- sura silalera -->
+    <div
+      class="modal fade"
+      id="suarSilalera"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Suar Silalera
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/sejarah/suar silalera.jpg" class="card-img-top" />
+            Sisir ini berfungsi untuk memelihara rambut laki-laki dalam rangka
+            upacara untuk memohon kesuburan tanah pertanian
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Keluar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- kahir suar silalera -->
+
+    <!-- modal -->
+
+    <!-- footer -->
+    <div
+      class="container-fluid pt-5 mt-5 pb-1"
+      style="background-color: var(--bs-dark-bg-subtle)"
+    >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <h1 class="fw-bold">Museum Siwalima</h1>
+            <p>Telp : 0911341652</p>
+            <p>
+              Jl. Dr. Malaiholo, Taman Makmur, Kel. Nusaniwe, Nusaniwe, kEL
+              NUSANIWE, Kec. Nusaniwe, Kota Ambon, Maluku
+            </p>
+          </div>
+
+          <div class="col-md-4 offset-md-2">
+            <h1 class="fw-bold">Tautan</h1>
+            <ul class="list-unstyled">
+              <li class="py-1">
+                <a href="tatabusana.html" class="text-decoration-none"
+                  >Ruang Busana</a
+                >
+              </li>
+              <li class="py-1">
+                <a href="prestasi.html" class="text-decoration-none"
+                  >Ruang Prestasi</a
+                >
+              </li>
+              <li class="py-1">
+                <a href="sejarah.html" class="text-decoration-none"
+                  >Ruang Sejarah</a
+                >
+              </li>
+              <li class="py-1">
+                <a href="kelautan.html" class="text-decoration-none"
+                  >Ruang Kelautan</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div>
+        <p class="text-center pt-3">
+          Di buat dengan ❤️ Oleh <span>Kelompok 3</span>
+        </p>
+      </div>
+    </div>
+    <!-- footer -->
+
+    <!-- back totop start -->
+    <div class="to-top flex visually-hidden" id="backTop">
+      <a href="#"><i class="bi bi-rocket"></i></a>
+    </div>
+    <!-- back totop end -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="/src/script.js"></script>
+  </body>
+</html>

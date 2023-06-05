@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Museum Siwalima</title>
+
+    <!-- Bpptstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+
+    <!-- icon bootsrtap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="src/style.css" />
+
+    <!-- font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav
+      class="navbar navbar-expand-lg fixed-top shadow"
+      style="background-color: var(--bs-body-bg)"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Siwalima</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto d-flex gap-4">
+            <a class="nav-link" href="tatabusana.html">Ruang Busana</a>
+            <a class="nav-link" href="prestasi.html">Ruang Prestasi</a>
+            <a class="nav-link" href="sejarah.html">Ruang Sejarah</a>
+            <a class="nav-link" href="kelautan.html">Ruang Kelautan</a>
+            <div class="dropdown">
+              <button
+                class="btn dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span class="me-2 d-lg-none">Tema</span>
+                <i
+                  class="bi bi-sun-fill theme-icon-active"
+                  data-theme-icon-active="bi-sun-fill"
+                ></i>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <button
+                    class="dropdown-item d-flex align-items-center"
+                    type="button"
+                    data-bs-theme-value="light"
+                  >
+                    <i
+                      class="bi bi-sun-fill me-2 opacity-50"
+                      data-theme-icon="bi-sun-fill"
+                    ></i>
+                    Light
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="dropdown-item d-flex align-items-center"
+                    type="button"
+                    data-bs-theme-value="dark"
+                  >
+                    <i
+                      class="bi bi-moon-stars-fill me-2 opacity-50"
+                      data-theme-icon="bi-moon-stars-fill"
+                    ></i>
+                    Dark
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="dropdown-item d-flex align-items-center"
+                    type="button"
+                    data-bs-theme-value="auto"
+                  >
+                    <i
+                      class="bi bi-circle-half me-2 opacity-50"
+                      data-theme-icon="bi-circle-half"
+                    ></i>
+                    Auto
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar -->
+
+    <div class="container-fluid pt-5 color-font" id="tatabusana">
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col">
+            <h1 class="diplay-4 text-center">Tata Busana</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <div
+            class="col-12 col-md-6 col-lg-3 d-flex mt-4 justify-content-center"
+          >
+            <div class="card" style="width: 18rem">
+              <img
+                src="img/tatabusana/sumatraUtara.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Baju Adat Tradisional Sumatera Utara</h5>
+                <p class="card-text">
+                  Provinsi Sumatera Utara juga mempunyai berbagai.....
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#a"
+                >
+                  Selengkapnya
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-3 d-flex mt-4 justify-content-center"
+          >
+            <div class="card" style="width: 18rem">
+              <img
+                src="img/tatabusana/riau.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Baju adat Tradisional Riau</h5>
+                <p class="card-text">
+                  Warna, bentuk, dan model pakaian adat ditentukan.....
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#b"
+                >
+                  Selengkapnya
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-3 d-flex mt-4 justify-content-center"
+          >
+            <div class="card" style="width: 18rem">
+              <img
+                src="img/tatabusana/jambi.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pakaian Adat Tradisional Jambi</h5>
+                <p class="card-text">
+                  pakaian adat Jambi pada umumnya terkenal akan .....
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#c"
+                >
+                  Selengkapnya
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-3 d-flex mt-4 justify-content-center"
+          >
+            <div class="card" style="width: 18rem">
+              <img
+                src="img/tatabusana/bengkulu.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Baju Adat Tradisional Bengkulu</h5>
+                <p class="card-text">
+                  Bengkulu merupakan provinsi yang sangat kental akan.....
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#d"
+                >
+                  Selengkapnya
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-3 d-flex mt-4 justify-content-center"
+          >
+            <div class="card" style="width: 18rem">
+              <img
+                src="img/tatabusana/lampung.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Baju Adat Tradisional Lampung</h5>
+                <p class="card-text">
+                  baju dari Lampung ini mempunyai berbagai macam.....
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#e"
+                >
+                  Selengkapnya
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-3 d-flex mt-4 justify-content-center"
+          >
+            <div class="card" style="width: 18rem">
+              <img
+                src="img/tatabusana/sultengah.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Pakaian Adat Tradisional Sulawesi Tengah
+                </h5>
+                <p class="card-text">
+                  Populasi Sulawesi Tengah terkenal sebagai pelaut.....
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#f"
+                >
+                  Selengkapnya
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-3 d-flex mt-4 justify-content-center"
+          >
+            <div class="card" style="width: 18rem">
+              <img
+                src="img/tatabusana/sultengg.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Baju Adat Tradisional Sulawesi Tenggara
+                </h5>
+                <p class="card-text">
+                  Di provinsi ini industri tenunan lokal masih ada, walupun
+                  .....
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#g"
+                >
+                  Selengkapnya
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-3 d-flex mt-4 justify-content-center"
+          >
+            <div class="card" style="width: 18rem">
+              <img
+                src="img/tatabusana/sulawesiutara.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Pakaian Adat Tradisional Sulawesi Utara
+                </h5>
+                <p class="card-text">
+                  Sejak dahulu Sulawesi Utara sudah menjalani.....
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#h"
+                >
+                  Selengkapnya
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-3 d-flex mt-4 justify-content-center"
+          >
+            <div class="card" style="width: 18rem">
+              <img
+                src="img/tatabusana/papua.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pakaian Adat Tradisional Papua</h5>
+                <p class="card-text">
+                  Papua tidak mengenal Senin tenun , maka pakaian.....
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#i"
+                >
+                  Selengkapnya
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-3 d-flex mt-4 justify-content-center"
+          >
+            <div class="card" style="width: 18rem">
+              <img
+                src="img/tatabusana/kalbar.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Baju Adat Tradisional Kalimantan Barat
+                </h5>
+                <p class="card-text">
+                  Kalimantan Barat merupakan provinsi yang berbatasan.....
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#j"
+                >
+                  Selengkapnya
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-3 d-flex mt-4 justify-content-center"
+          >
+            <div class="card" style="width: 18rem">
+              <img
+                src="img/tatabusana/kalimantantengah.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Baju Adat Tradisional Kalimantan Tengah
+                </h5>
+                <p class="card-text">
+                  Pakaian adat Kalimantan Tengah terinspirasi dari.....
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#k"
+                >
+                  Selengkapnya
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-3 d-flex mt-4 justify-content-center"
+          >
+            <div class="card" style="width: 18rem">
+              <img
+                src="img/tatabusana/sumatraseltan.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pakaian Adat Sumatera Selatan</h5>
+                <p class="card-text">
+                  Keunikan yang ada pada baju adat Sulawesi Selatan ini.....
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#l"
+                >
+                  Selengkapnya
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-3 d-flex mt-4 justify-content-center"
+          >
+            <div class="card" style="width: 18rem">
+              <img
+                src="img/tatabusana/sumatrabarat.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pakaian Adat Sumatera Barat</h5>
+                <p class="card-text">
+                  baju yang ditaburi dengan benang emas. Tabur emas.....
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#m"
+                >
+                  Selengkapnya
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-3 d-flex mt-4 justify-content-center"
+          >
+            <div class="card" style="width: 18rem">
+              <img
+                src="img/tatabusana/ntb.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pakaian Adat Tradisional NTB</h5>
+                <p class="card-text">
+                  Pakaian adat dari Nusa Tenggara Barat pada....
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#n"
+                >
+                  Selengkapnya
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-3 d-flex mt-4 justify-content-center"
+          >
+            <div class="card" style="width: 18rem">
+              <img
+                src="img/tatabusana/maluku.jpeg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Baju Adat Tradisional Maluku</h5>
+                <p class="card-text">
+                  Biasanya baju adat ini akan digunakan .....
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#o"
+                >
+                  Selengkapnya
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-3 d-flex mt-4 justify-content-center"
+          >
+            <div class="card" style="width: 18rem">
+              <img
+                src="img/tatabusana/pengantin.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Busana pengantin Tradisional Nusantara
+                </h5>
+                <p class="card-text">
+                  Koleksi ini merupakan Busana pengantin Replika Dari berbagai
+                  provinsi di Indonesia , isi dari pameranIni memiliki rasa
+                  persamaan, persatuan, perbedaan Yang digambarkan dalam ......
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#z"
+                >
+                  Selengkapnya
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal -->
+    <div
+      class="modal fade"
+      id="z"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Busana pengantin Tradisional Nusantara
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/tatabusana/pengantin.jpg" class="card-img-top" />
+            Koleksi ini merupakan Busana pengantin Replika Dari berbagai
+            provinsi di Indonesia , isi dari pameranIni memiliki rasa persamaan,
+            persatuan, perbedaan Yang digambarkan dalam lambang negara kita"
+            Bhinneka Tunggal Ika "
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Keluar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Baju Adat Tradisional Sumatera Utara -->
+    <div
+      class="modal fade"
+      id="a"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Baju Adat Tradisional Sumatera Utara
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/tatabusana/sumatraUtara.jpeg" class="card-img-top" />
+            Provinsi Sumatera Utara juga mempunyai berbagai macam kebudayaan
+            yang mengagumkan. Dimana pada provinsi ini dikenal akan salah satu
+            daerah yang khas dengan suku bataknya Daerah tersebut ternyata juga
+            mempunyai pakaian yang disebut dengan kain ulos.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Keluar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- akhir Baju Adat Tradisional Sumatera Utara -->
+
+    <!-- kapak Baju adat Tradisional Riau -->
+    <div
+      class="modal fade"
+      id="b"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Baju adat Tradisional Riau
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/tatabusana/riau.jpeg" class="card-img-top" />
+            Warna, bentuk, dan model pakaian adat ditentukan berdasarkan
+            filosofi masyarakat Melayu Riau yang mengandung nilai-nilai
+            tertentu.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Keluar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Baju adat Tradisional Riau -->
+
+    <!-- patung tavu -->
+    <div
+      class="modal fade"
+      id="c"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Pakaian Adat Tradisional Jambi
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/tatabusana/jambi.jpeg" class="card-img-top" />
+            pakaian adat Jambi pada umumnya terkenal akan kemegahannya atau
+            glamor, hal ini dikarenakan adanya sulaman benang emas pada pakaian
+            tersebut.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Keluar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- akhir patung tavu -->
+
+    <!-- patung moyang -->
+    <div
+      class="modal fade"
+      id="d"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Baju Adat Tradisional Bengkulu
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/tatabusana/bengkulu.jpeg" class="card-img-top" />
+            Bengkulu merupakan provinsi yang sangat kental akan budaya
+            Melayunya. Meskipun begitu, budaya Melayu yang ada pada Bengkulu ini
+            tentunya sangat berbeda apabila dibandingkan dengan budaya Melayu
+            pada umumnya.Baju Bengkulu pada umumnya identik dengan warna merah
+            dan untuk para pria dan juga wanita pada umumnya akan menggunakan
+            penutup dan juga hiasan kepala dengan bercorak khas nan istimewa.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Keluar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- akhir patung moyang -->
+
+    <!-- patung raja -->
+    <div
+      class="modal fade"
+      id="e"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Baju Adat Tradisional Lampung
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/tatabusana/lampung.jpeg" class="card-img-top" />
+            baju dari Lampung ini mempunyai berbagai macam pernak-pernik yang
+            dapat menambah keindahan pada bajunya, dengan aksesoris yang terbuat
+            dari bahan kain tapis juga digunakan untuk mempercantik pakaian ini.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Keluar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- akhir patung raja -->
+
+    <!-- tengkorak keramat -->
+    <div
+      class="modal fade"
+      id="f"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Pakaian Adat Tradisional Sulawesi Tengah
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/tatabusana/sultengah.jpeg" class="card-img-top" />
+            Populasi Sulawesi Tengah terkenal sebagai pelaut yang melakukan
+            perdagangan Antar pulau sehingga apresiasi mereka cukup tinggi
+            terhadap barang barang dari luar seperti satin , sutera Dan kain
+            berhiaskan emas yang kemudian di pergunakan untuk membuat busana
+            pengantin Kaili dari Donggala Sulawesi Tengah.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Keluar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- akhir tengkorak keramat -->
+
+    <!-- perahu doti -->
+    <div
+      class="modal fade"
+      id="g"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Baju Adat Tradisional Sulawesi Tenggara
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/tatabusana/sultengg.jpeg " class="card-img-top" />
+            Di provinsi ini industri tenunan lokal masih ada, walupun tekstil
+            impor lebih disukai oleh mereka yang berada , khususnya untuk
+            membuat busana pengantin serta busana bagi para bangsawan.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Keluar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- akhir perahu doti -->
+
+    <!-- patung penolak bala -->
+    <div
+      class="modal fade"
+      id="h"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Pakaian Adat Tradisional Sulawesi Utara
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/tatabusana/sulawesiutara.jpeg" class="card-img-top" />
+            Sejak dahulu Sulawesi Utara sudah menjalani hubungan persahabatan
+            yang erat dengan orang Belanda dan dengan cepat mengadopsi tata cara
+            hidup orang Eropa.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Keluar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- akhir patung penolak bala -->
+
+    <!-- patung petuanan -->
+    <div
+      class="modal fade"
+      id="i"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Pakaian Adat Tradisional Papua
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/tatabusana/papua.jpeg" class="card-img-top" />
+            Papua tidak mengenal Senin tenun , maka pakaian pengantin dewasa ini
+            disesuaikan dengan kebutuhan zaman sambil mempromosikan identitas
+            lokal seperti coklat dan kuning yaitu warna warni burung cendrawasih
+            sedang merah - kuning emas di sukai karena warnanya yang cerah .
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Keluar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- akhir patung petuanan -->
+
+    <!-- sura silalera -->
+    <div
+      class="modal fade"
+      id="j"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Baju Adat Tradisional Kalimantan Barat
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/tatabusana/kalbar.jpeg" class="card-img-top" />
+            Kalimantan Barat merupakan provinsi yang berbatasan langsung dengan
+            Sarawak, Malaysia, sehingga kebanyakan dari masyarakat ini masih
+            terpengaruh dengan kebudayaan Melayu.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Keluar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- kahir suar silalera -->
+
+    <div
+      class="modal fade"
+      id="k"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Baju Adat Tradisional Kalimantan Tengah
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src="img/tatabusana/kalimantantengah.jpeg"
+              class="card-img-top"
+            />
+            Pakaian adat Kalimantan Tengah terinspirasi dari alam sekitar,
+            seperti hewan, tumbuhan dan benda-benda yang ada di lingkungan
+            sekitarnya. Selain itu, pakaian tersebut juga tertuju pada upacara
+            adat tertentu, seperti upacara kematian, upacara perkawinan, dan
+            upacara adat lainnya. Sehingga, setiap jenis pakaian adat mempunyai
+            arti dan makna yang berbeda-beda.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Keluar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="l"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Baju Adat Tradisional Kalimantan Barat
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/tatabusana/sumatraseltan.jpeg" class="card-img-top" />
+            Kalimantan Barat merupakan provinsi yang berbatasan langsung dengan
+            Sarawak, Malaysia, sehingga kebanyakan dari masyarakat ini masih
+            terpengaruh dengan kebudayaan Melayu.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Keluar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="m"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Pakaian Adat Sumatera Selatan
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/tatabusana/sumatrabarat.jpeg" class="card-img-top" />
+            Keunikan yang ada pada baju adat Sulawesi Selatan ini adalah baju
+            mempunyai desain yang begitu sederhana dan juga minim dengan
+            jahitan. Meskipun desain yang diterapkan sangat sederhana, tetapi
+            baju ini terlihat sangat menarik dan juga elegan.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Keluar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="n"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Baju Adat Tradisional NTB
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/tatabusana/ntb.jpg" class="card-img-top" />
+            Pakaian adat dari Nusa Tenggara Barat pada umumnya yang digunakan
+            adalah pakaian tradisional khas dari Lombok Mataram. Dimana baju
+            adat dari Lombok ini akan digunakan pada saat ada acara-acara
+            penting, misalnya seperti upacara, pernikahan, dan berbagai macam
+            acara adat yang lainnya.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Keluar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="o"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Baju Adat Tradisional Maluku
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/tatabusana/maluku.jpeg" class="card-img-top" />
+            Biasanya baju adat ini akan digunakan untuk berbagai upacara adat
+            atau beberapa acara sakral lainnya.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Keluar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal -->
+
+    <!-- footer -->
+    <div
+      class="container-fluid pt-5 mt-5 pb-1"
+      style="background-color: var(--bs-dark-bg-subtle)"
+    >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <h1 class="fw-bold">Museum Siwalima</h1>
+            <p>Telp : 0911341652</p>
+            <p>
+              Jl. Dr. Malaiholo, Taman Makmur, Kel. Nusaniwe, Nusaniwe, kEL
+              NUSANIWE, Kec. Nusaniwe, Kota Ambon, Maluku
+            </p>
+          </div>
+
+          <div class="col-md-4 offset-md-2">
+            <h1 class="fw-bold">Tautan</h1>
+            <ul class="list-unstyled">
+              <li class="py-1">
+                <a href="tatabusana.html" class="text-decoration-none"
+                  >Ruang Busana</a
+                >
+              </li>
+              <li class="py-1">
+                <a href="prestasi.html" class="text-decoration-none"
+                  >Ruang Prestasi</a
+                >
+              </li>
+              <li class="py-1">
+                <a href="sejarah.html" class="text-decoration-none">Ruang Sejarah</a>
+              </li>
+              <li class="py-1">
+                <a href="kelautan.html" class="text-decoration-none">Ruang Kelautan</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div>
+        <p class="text-center pt-3">
+          Di buat dengan ❤️ Oleh <span>Kelompok 3</span>
+        </p>
+      </div>
+    </div>
+    <!-- footer -->
+
+    <!-- back totop start -->
+    <div class="to-top flex visually-hidden" id="backTop">
+      <a href="#"><i class="bi bi-rocket"></i></a>
+    </div>
+    <!-- back totop end -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="/src/script.js"></script>
+  </body>
+</html>
