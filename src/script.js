@@ -155,9 +155,10 @@ window.onscroll = function () {
 const team = document.querySelectorAll(".tim");
 
 team.forEach((team, i) => {
-  team.dataset.aos = "fade-down";
-  team.dataset.aosDelay = i * 300;
-  team.dataset.aosOffset = 0.2;
+  team.dataset.aos = "zoom-in";
+  team.dataset.aosDelay = i * 200;
+  team.dataset.aosOffset = 50;
+  team.dataset.aosDuration = 1000;
 });
 
 AOS.init();
@@ -165,7 +166,8 @@ AOS.init();
 // /typed-js/
 var typed = new Typed(".typing-text", {
   strings: ["Selamat Datang Di...", "Museum Siwalima"],
-  typeSpeed: 50,
+  typeSpeed: 60,
   loop: true,
-  loopCount: Infinity, backSpeed: 50,
+  loopCount: Infinity,
+  backSpeed: 60,
 });

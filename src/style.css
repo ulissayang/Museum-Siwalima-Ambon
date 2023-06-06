@@ -5,6 +5,13 @@ body {
   padding: 0;
 }
 
+.font-logo {
+  position: absolute;
+  top: 0.6rem;
+  left: 4.5rem;
+  font-size: 0.7rem;
+}
+
 /* dekstipsii startt */
 #content-desk {
   position: relative;
@@ -264,6 +271,14 @@ a.sosial-footer {
     overflow: hidden;
   }
 
+  .text-judul {
+    font-size: 3rem;
+  }
+
+  .sub-judul {
+    font-size: 1.5rem;
+  }
+
   #images {
     display: flex;
     justify-content: end;
@@ -365,6 +380,14 @@ a.sosial-footer {
     text-align: center;
     font-size: 30px;
     padding-bottom: 12px;
+  }
+
+  .text-judul {
+    font-size: 3.5rem;
+  }
+
+  .sub-judul {
+    font-size: 2rem;
   }
 
   .nav-link:hover::after {
